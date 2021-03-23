@@ -1,10 +1,7 @@
 from setuptools import setup
 import os
 
-if not os.path.isfile("README.rst"):
-    raise RuntimeError("Generate README.rst from README.md before running tox or setup")
-
-with open('./README.rst') as fd:
+with open('./README.md') as fd:
     long_description = fd.read()
 
 setup(
